@@ -135,15 +135,31 @@ Maintenant on trace le spectrogramme qui nous a permet exactement de visualiser 
 ![alt text](https://github.com/NhailaSara/TP2--Jeux-de-mots-Synth-se-et-analyse-spectrale-d-une-gamme-de-musique/blob/main/signal_analyser.png?raw=true)
 
 Le spectre d’un signal à temps continu peut être approché par transformée de Fourier discrète (TFD)
+# Approximation du spectre d’un signal sinusoïdal à temps continu par FFT
+4- Le spectre d’un signal à temps continu peut être approché par transformée de Fourier discrète (TFD) ou sa version rapide (Fast Fourier Transform (FFT). Afficher le spectre de fréquence de la gamme musicale crée en échelle linéaire, puis avec une échelle en décibels.
+
 <h4>Le spectre de fréquence de la gamme musicale en échelle linéaire</h4>
- ![alt text](https://github.com/NhailaSara/TP2--Jeux-de-mots-Synth-se-et-analyse-spectrale-d-une-gamme-de-musique/blob/main/spectre1.png?raw=true)  
+
+
+![spectre1](https://user-images.githubusercontent.com/121027279/215197849-6df51754-c350-4e6f-bbcf-5334f25ffa37.png)
+
+ N=length(music); 
+ tfd=fftshift(fft(music)) 
+ f=(-N/2:(N/2)-1)*(8192/N); 
+ plot(f,abs(tfd));
+
+Pour tracer le spectre de fréquence en dB, on utilise la fonction mag2db() qui utilise la formule suivante :
+
+ tfdb=mag2db(abs(tfd));
+ figure(2) plot(f,tfdb);
+
+On obtient la figure suivante :
 <h4>Le spectre de fréquence de la gamme musicale en échelle décibels.</h4>
- ![alt text](https://github.com/NhailaSara/TP2--Jeux-de-mots-Synth-se-et-analyse-spectrale-d-une-gamme-de-musique/blob/main/spectre2.png?raw=true)
- 
- # Approximation du spectre d’un signal sinusoïdal à temps continu par FFT
- 
- 4- Le spectre d’un signal à temps continu peut être approché par transformée de Fourier discrète (TFD) ou sa version rapide (Fast Fourier Transform (FFT). Afficher le spectre de fréquence de la gamme musicale crée en échelle linéaire, puis avec une échelle en décibels.
- 
- 
- 
- 
+
+![spectre2](https://user-images.githubusercontent.com/121027279/215197786-d0520bce-1991-4897-820f-b20f1dfad50f.png)
+
+On peut utiliser les 8 fréquences qui utilisent la gamme de music
+
+# Conclusion
+
+Ce TP nous a permet d’appliquer notre connaissance théorique pour mieux visualiser les signaux et manipuler un signal audio avec Matlab, en effectuant certaines opérations sur un fichier audio d’une phrase enregistrée sur un téléphone mobile. 

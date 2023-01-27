@@ -72,10 +72,20 @@ Le signal sans temps pour récupérer les indices
 # Exercice 2 : Synthèse et analyse spectrale d’une gamme de musique.
 
 <h1>Synthèse d’une gamme de musique</h1>
+Les notes de musique produites par un piano peuvent être synthétisées approximativement numériquement. En effet, chaque note peut être considérée comme étant un son pur produit par un signal sinusoïdal. La fréquence de la note « La » est par exemple de 440 Hz.
+
 <H3>1- Créez un programme qui permet de jouer une gamme de musique. La fréquence de chaque note est précisée dans le tableau ci-dessous. Chaque note aura une durée de 1s. La durée de la gamme sera donc de 8s. La fréquence d’échantillonnage fe sera fixée à 8192 Hz.</H3>
 
+![alt text](https://github.com/NhailaSara/TP2--Jeux-de-mots-Synth-se-et-analyse-spectrale-d-une-gamme-de-musique/blob/main/table.png?raw=true)
 
-Les notes de musique produites par un piano peuvent être synthétisées approximativement numériquement. En effet, chaque note peut être considérée comme étant un son pur produit par un signal sinusoïdal. La fréquence de la note « La » est par exemple de 440 Hz.
+# Spectre de la gamme de musique
+2- Utilisez l’outil graphique d’analyse de signaux signalAnalyzer pour visualiser le
+
+spectre de votre gamme. Observez les 8 fréquences contenues dans la gamme et vérifiez leur valeur numérique à l’aide des curseurs.
+![alt text](https://github.com/NhailaSara/TP2--Jeux-de-mots-Synth-se-et-analyse-spectrale-d-une-gamme-de-musique/blob/main/signal_analyser.png?raw=true)
+
+Grâce à l'outil d’analyse de signaux sur Matlab <h3>signalAnalyzer</h3> qui permet de visualiser les caractéristiques d’un signal dans les domaines temporel et spectral, On observe 8 pics de fréquences caractérisant les 8 notes formant notre gamme de musique .
+
 # Le script :
     clear all
     close all

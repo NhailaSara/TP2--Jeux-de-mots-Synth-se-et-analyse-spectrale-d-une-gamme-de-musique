@@ -130,6 +130,21 @@ Grâce à l'outil d’analyse de signaux sur Matlab <h3>signalAnalyzer</h3> qui 
 
 ![alt text](https://github.com/NhailaSara/TP2--Jeux-de-mots-Synth-se-et-analyse-spectrale-d-une-gamme-de-musique/blob/main/s3.png?raw=true)
 
+Maintenant on trace le spectrogramme qui nous a permet exactement de visualiser les huit pics, chaque pic trouve dans la zone plus coloré.
 
+![alt text](https://github.com/NhailaSara/TP2--Jeux-de-mots-Synth-se-et-analyse-spectrale-d-une-gamme-de-musique/blob/main/signal_analyser.png?raw=true)
 
+Le spectre d’un signal à temps continu peut être approché par transformée de Fourier discrète (TFD)
 
+                          <h4>Le spectre de fréquence de la gamme musicale en échelle linéaire</h4>
+ ![alt text](https://github.com/NhailaSara/TP2--Jeux-de-mots-Synth-se-et-analyse-spectrale-d-une-gamme-de-musique/blob/main/spectre1.png ?raw=true)  
+                          <h4>Le spectre de fréquence de la gamme musicale en échelle décibels.</h4>
+ ![alt text](https://github.com/NhailaSara/TP2--Jeux-de-mots-Synth-se-et-analyse-spectrale-d-une-gamme-de-musique/blob/main/spectre2.png ?raw=true)
+ 
+ # Approximation du spectre d’un signal sinusoïdal à temps continu par FFT
+ 
+ 4- Le spectre d’un signal à temps continu peut être approché par transformée de Fourier discrète (TFD) ou sa version rapide (Fast Fourier Transform (FFT). Afficher le spectre de fréquence de la gamme musicale crée en échelle linéaire, puis avec une échelle en décibels.
+ 
+ 
+ 
+ 

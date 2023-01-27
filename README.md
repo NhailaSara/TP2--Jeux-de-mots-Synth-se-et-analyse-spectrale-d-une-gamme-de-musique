@@ -143,10 +143,10 @@ Le spectre d’un signal à temps continu peut être approché par transformée 
 
 ![spectre1](https://user-images.githubusercontent.com/121027279/215197849-6df51754-c350-4e6f-bbcf-5334f25ffa37.png)
 
-   N=length(music); 
-   tfd=fftshift(fft(music)) 
-   f=(-N/2:(N/2)-1)*(8192/N); 
-   plot(f,abs(tfd));
+     N=length(music); 
+     tfd=fftshift(fft(music)) 
+     f=(-N/2:(N/2)-1)*(8192/N); 
+     plot(f,abs(tfd));
 
 Pour tracer le spectre de fréquence en dB, on utilise la fonction mag2db() qui utilise la formule suivante :
 

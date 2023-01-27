@@ -1,1 +1,1 @@
-# TP2--Jeux-de-mots-Synth-se-et-analyse-spectrale-d-une-gamme-de-musique
+# TP2- Jeux de mots / Synthèse et analyse spectrale d’une gamme de musique
